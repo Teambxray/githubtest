@@ -40,3 +40,44 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Scanning Red Line</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: black; /* Black background */
+        }
+
+        @keyframes scanLine {
+            0% {
+                top: 0;
+            }
+            50% {
+                top: 50%;
+            }
+            100% {
+                top: 0;
+            }
+        }
+
+        .scan-line {
+            position: absolute;
+            width: 100%; /* Full width of the screen */
+            height: 10px; /* Big line height */
+            background-color: red;
+            animation: scanLine 2s ease-in-out infinite; /* Moves up and down */
+            box-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red; /* Glowing effect */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scan-line"></div>
+
+</body>
+</html>
