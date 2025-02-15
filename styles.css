@@ -8,10 +8,20 @@
 .scan-line {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 100%;
-    height: 6px;
-    background: linear-gradient(to right, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 0, 0, 0) 100%);
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.0);
+    height: 4px; /* Slightly thicker for visibility */
+    transform: translateX(-50%);
+    
+    /* FIX: Ensure a SINGLE LINE without splitting at the edges */
+    background: rgba(255, 0, 0, 1); /* Pure red color */
+    
+    /* Soft, Smooth 3D Glow */
+    box-shadow: 
+        0 0 15px rgba(255, 0, 0, 0.9),  /* Core Glow */
+        0 0 30px rgba(255, 0, 0, 0.6),  /* Medium Glow */
+        0 0 45px rgba(255, 0, 0, 0.4),  /* Outer Glow */
+        0 0 60px rgba(255, 0, 0, 0.2);  /* Extended Glow */
+
     z-index: 1000;
 }
