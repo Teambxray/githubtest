@@ -10,7 +10,7 @@
     top: 0;
     left: 50%;
     width: 100%;
-    height: 12px; /* Slightly thicker for better glow visibility */
+    height: 10px; /* Slightly thicker for better glow visibility */
     transform: translateX(-50%);
     
     /* SOLID RED LINE WITH GRADIENT GLOW */
