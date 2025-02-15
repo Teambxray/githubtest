@@ -3,81 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages Test</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My GitHub Test Page</h1>
-    <p>If you see this, GitHub Pages is working!</p>
-    <button onclick="showMessage()">Click Me</button>
-    <p id="message"></p>
-
-    <script>
-        function showMessage() {
-            document.getElementById("message").innerText = "Hello from GitHub Pages!";
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glowing Scanning Red Line</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background-color: black; /* Black background */
-        }
-
-        @keyframes scanLine {
-            0% {
-                top: 0;
-            }
-            50% {
-                top: 50%;
-            }
-            100% {
-                top: 0;
-            }
-        }
-
-        .scan-line {
-            position: absolute;
-            width: 100%; /* Full width of the screen */
-            height: 10px; /* Big line height */
-            background-color: red;
-            animation: scanLine 2s ease-in-out infinite; /* Moves up and down */
-            box-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red; /* Glowing effect */
-        }
-    </style>
+    <title>Red Line Animation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="scan-line"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
